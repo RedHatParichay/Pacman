@@ -6,5 +6,5 @@ frame which in turn calls the MazePanel class. To create walls, ghosts, food, an
 attribute x and y coordinates from the superclass PacmanObject. To keep track of where the walls and food are placed, I used the 
 built-in Java Linked List structure. I also created a score class which deals with updating and writing the score on the screen. The 
 ghosts and Pacman move with a combination of which direction to move in(a boolean) and a speed. I had to create functions that stop 
-the ghosts and Pacman from going outside the windows and prevent passing through the walls. Finally the MazePanel runs everything. 
+the ghosts and Pacman from going outside the windows and prevent passing through the walls. Finally, the MazePanel runs everything. 
 
