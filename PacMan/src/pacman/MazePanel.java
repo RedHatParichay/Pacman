@@ -135,6 +135,8 @@ public class MazePanel extends JPanel implements ActionListener{
     
     public void paint(Graphics g) {
     	
+		super.paint(g);
+		
     	Graphics2D g2D = (Graphics2D) g;  //turn graphics to 2d graphics
     	
     	//if game has started
