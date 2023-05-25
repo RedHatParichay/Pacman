@@ -56,6 +56,8 @@ public class MazePanel extends JPanel implements ActionListener{
 	boolean InGame;			//boolean that will keep track if the player is in the game or not
     private int DELAY;		//to stop objects from moving too fast, we add a delay
     int lives;				//to store how many lives our player has left	
+
+	int randomizedDelay = 0;
 	
     //load images for different directions of pacman and load images for ghosts
     Image pacman_up = new ImageIcon("images/pacman_up.png").getImage();
@@ -185,12 +187,16 @@ public class MazePanel extends JPanel implements ActionListener{
     //move method moves pacman and ghosts 
     public void move() {
     	if (DELAY==2) {
+			randomizedDelay++;
     		pacman.move(BLOCK_SIZE, wallgrid);
     		DELAY=0;
-    		for(int i=0; i<ghosts.length; i++) {
-    			ghosts[i].randomDirection();			//generate random direction for ghosts
-    			ghosts[i].move(BLOCK_SIZE, wallgrid);	//move ghosts accordingly
-    		}
+			if(randomizedDelay == 4){
+				randomizedDelay = 0;
+				for(int i=0; i<ghosts.length; i++) {
+					ghosts[i].randomDirection();			//generate random direction for ghosts
+					ghosts[i].move(BLOCK_SIZE, wallgrid);	//move ghosts accordingly
+				}
+			}
     		
     	}
     	
