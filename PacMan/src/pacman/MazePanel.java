@@ -60,14 +60,14 @@ public class MazePanel extends JPanel implements ActionListener{
 	int randomizedDelay = 0;
 	
     //load images for different directions of pacman and load images for ghosts
-    Image pacman_up = new ImageIcon("images/pacman_up.png").getImage();
-    Image pacman_down = new ImageIcon("images/pacman_down.png").getImage();
-    Image pacman_left = new ImageIcon("images/pacman_left.png").getImage();
-    Image pacman_right = new ImageIcon("images/pacman_right.png").getImage();
-    Image ghost1_pic = new ImageIcon("images/ghost1.png").getImage();
-    Image ghost2_pic = new ImageIcon("images/ghost2.png").getImage();
-    Image ghost3_pic = new ImageIcon("images/ghost3.png").getImage();
-    Image ghost4_pic = new ImageIcon("images/ghost4.png").getImage();
+    Image pacman_up = new ImageIcon("Pacman/images/pacman_up.png").getImage();
+    Image pacman_down = new ImageIcon("Pacman/images/pacman_down.png").getImage();
+    Image pacman_left = new ImageIcon("Pacman/images/pacman_left.png").getImage();
+    Image pacman_right = new ImageIcon("Pacman/images/pacman_right.png").getImage();
+    Image ghost1_pic = new ImageIcon("Pacman/images/ghost1.png").getImage();
+    Image ghost2_pic = new ImageIcon("Pacman/images/ghost2.png").getImage();
+    Image ghost3_pic = new ImageIcon("Pacman/images/ghost3.png").getImage();
+    Image ghost4_pic = new ImageIcon("Pacman/images/ghost4.png").getImage();
     
     //constructor to 
     public MazePanel(){

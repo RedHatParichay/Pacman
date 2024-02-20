@@ -4,7 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "PacManGame",
+            "request": "launch",
+            "mainClass": "Pacman/pacman.PacManGame",
+            "projectName": "Pacman_a705164a"
+        },
         {
             "type": "java",
             "name": "Current File",
@@ -19,7 +25,6 @@
             "mainClass": "Pacman/pacman.PacManGame",
             "cwd": "${PacMan}",
             "projectName": "Pacman_1fef409e"
-            
         }
     ]
 }
